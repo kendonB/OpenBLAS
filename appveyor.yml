@@ -58,7 +58,7 @@ build_script:
   - cmake --build .
 
 after_build:
-  - 7z a openblas-win.zip c:\projects\OpenBLAS\*
+  - 7z a c:\openblas-win.zip c:\projects\OpenBLAS\*
 
 test_script:
   - echo Running Test
@@ -66,5 +66,5 @@ test_script:
   - openblas_utest
   
 artifacts:
-  - path: openblas-win.zip
+  - path: c:\openblas-win.zip
     name: Installed Bundle
