@@ -59,7 +59,7 @@ build_script:
 
 after_build:
   - if not exist "artifacts\" mkdir artifacts
-  - 7z a C:\projects\OpenBLAS\artifacts\openblas-win.zip C:\projects\OpenBLAS\*
+  - 7z a C:\projects\OpenBLAS\artifacts\openblas-win.zip C:\projects\OpenBLAS\build\*
 
 test_script:
   - echo Running Test
