@@ -66,5 +66,5 @@ test_script:
   - openblas_utest
   
 artifacts:
-  - path: .\openblas-win.zip
+  - path: c:\projects\OpenBLAS\build\openblas-win.zip
     name: Installed Bundle
