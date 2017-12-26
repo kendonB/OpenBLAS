@@ -59,7 +59,7 @@ build_script:
 
 after_build:
   - mkdir artifacts
-  - 7z a .\artifacts\openblas-win.zip .\*
+  - 7z a C:\projects\OpenBLAS\artifacts\openblas-win.zip C:\projects\OpenBLAS\*
 
 test_script:
   - echo Running Test
@@ -67,5 +67,5 @@ test_script:
   - openblas_utest
   
 artifacts:
-  - path: artifacts\openblas-win.zip
+  - path: .\artifacts\openblas-win.zip
     name: Installed Bundle
