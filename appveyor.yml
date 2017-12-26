@@ -32,10 +32,13 @@ environment:
   matrix:
     - COMPILER: clang-cl
       WITH_FORTRAN: yes
+      name: clangclfortran
     - COMPILER: clang-cl
       DYNAMIC_ARCH: ON
       WITH_FORTRAN: no
+      name: clangcldynarch
     - COMPILER: cl
+      name: cl
 
 install:
   - if [%COMPILER%]==[clang-cl] call %CONDA_INSTALL_LOCN%\Scripts\activate.bat
