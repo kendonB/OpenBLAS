@@ -58,7 +58,7 @@ build_script:
   - cmake --build .
 
 after_build:
-  - if not exist "artifacts" mkdir artifacts
+  - if not exist "artifacts\" mkdir artifacts
   - 7z a C:\projects\OpenBLAS\artifacts\openblas-win.zip C:\projects\OpenBLAS\*
 
 test_script:
