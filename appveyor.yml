@@ -57,7 +57,14 @@ before_build:
 build_script:
   - cmake --build .
 
+after_build:
+  - 7z a openblas-win.zip c:\projects\OpenBLAS\*
+
 test_script:
   - echo Running Test
   - cd utest
   - openblas_utest
+  
+artifacts:
+  - path: openblas-win.zip
+    name: Installed Bundle
